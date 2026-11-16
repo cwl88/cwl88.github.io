@@ -336,6 +336,6 @@ footer .links a:hover{color:#fff}
 #toTop.show{opacity:1;pointer-events:auto}
 #toTop:hover{transform:translateY(-2px)}
 
-/* 入场动画 */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
+/* 入场动画（仅 JS 可用时启用，保证无 JS 也能看到内容） */
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js .reveal.in{opacity:1;transform:none}
