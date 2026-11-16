@@ -5,47 +5,14 @@
 
 /* ==========================================================
    配色主题
-   ① 极简白（默认）：暖灰背景 + 深砖红字
-   ② 暗黑风：深黑背景 + 橙色点缀
-   ③ 古典青：青灰背景 + 朱砂红
-   切换方式：<html data-theme="minimal|dark|classic">
+   默认：暗黑风（深黑背景 + 橙色点缀）
+   可选：给 <html> 加 data-theme="minimal" 或 "classic" 即可换肤
+        · minimal  极简白（暖灰背景 + 深砖红字）
+        · classic  古典青（青灰背景 + 朱砂红）
    ========================================================== */
 
-/* ---------- ① 极简白 · 默认 ---------- */
+/* ---------- 默认 · 暗黑风 ---------- */
 :root{
-  --paper:#f4f2ee;
-  --paper-2:#eae6df;
-  --card:#fdfcfa;
-  --ink:#6b3f33;
-  --heading:#7f2f22;
-  --ink-soft:#7a6a60;
-  --ink-faint:#a89d92;
-  --brick:#8a3a2b;
-  --brick-2:#a8482f;
-  --on-accent:#fffaf6;
-  --stone:#8b8378;
-  --line:#e2dbd0;
-  --line-strong:#cfc3b0;
-  --nav-bg:rgba(244,242,238,.86);
-  --note-bg:#f7f1e6;
-  --note-line:#e6d8c1;
-  --note-ink:#6d6153;
-  --slot-line:#d3c8b6;
-  --slot-bg:rgba(255,255,255,.45);
-  --tag-bg:#fbf0eb;
-  --tag-line:#e8cdc2;
-  --shadow-lift:0 18px 40px rgba(27,26,23,.09);
-  --shadow-nav:0 2px 20px rgba(27,26,23,.05);
-  --night:#12141a;
-  --night-2:#1a1d26;
-  --radius:14px;
-  --maxw:1080px;
-  --serif:"Songti SC","STSong","SimSun",Georgia,"Times New Roman",serif;
-  --sans:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
-}
-
-/* ---------- ② 暗黑风 ---------- */
-html[data-theme="dark"]{
   --paper:#0d0e12;
   --paper-2:#151820;
   --card:#14161d;
@@ -71,9 +38,44 @@ html[data-theme="dark"]{
   --shadow-nav:0 2px 22px rgba(0,0,0,.45);
   --night:#08090c;
   --night-2:#101219;
+  --radius:14px;
+  --maxw:1080px;
+  --serif:"Songti SC","STSong","SimSun",Georgia,"Times New Roman",serif;
+  --sans:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
 }
 
-/* ---------- ③ 古典青 ---------- */
+/* ---------- 备选 · 极简白 ---------- */
+html[data-theme="minimal"]{
+  --paper:#f4f2ee;
+  --paper-2:#eae6df;
+  --card:#fdfcfa;
+  --ink:#6b3f33;
+  --heading:#7f2f22;
+  --ink-soft:#7a6a60;
+  --ink-faint:#a89d92;
+  --brick:#8a3a2b;
+  --brick-2:#a8482f;
+  --on-accent:#fffaf6;
+  --stone:#8b8378;
+  --line:#e2dbd0;
+  --line-strong:#cfc3b0;
+  --nav-bg:rgba(244,242,238,.86);
+  --note-bg:#f7f1e6;
+  --note-line:#e6d8c1;
+  --note-ink:#6d6153;
+  --slot-line:#d3c8b6;
+  --slot-bg:rgba(255,255,255,.45);
+  --tag-bg:#fbf0eb;
+  --tag-line:#e8cdc2;
+  --shadow-lift:0 18px 40px rgba(27,26,23,.09);
+  --shadow-nav:0 2px 20px rgba(27,26,23,.05);
+  --night:#12141a;
+  --night-2:#1a1d26;
+  color-scheme:light;
+}
+
+/* ---------- 备选 · 古典青 ---------- */
 html[data-theme="classic"]{
   --paper:#e9ede9;
   --paper-2:#dfe5e1;
@@ -100,6 +102,7 @@ html[data-theme="classic"]{
   --shadow-nav:0 2px 20px rgba(30,45,38,.07);
   --night:#101418;
   --night-2:#181f24;
+  color-scheme:light;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -420,66 +423,3 @@ footer .links a:hover{color:#fff}
 /* 入场动画（仅 JS 可用时启用，保证无 JS 也能看到内容） */
 .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .js .reveal.in{opacity:1;transform:none}
-
-/* ===================== 换肤面板（临时预览用） ===================== */
-.skin{position:fixed;left:22px;bottom:22px;z-index:130;font-family:var(--sans)}
-.skin-toggle{
-  display:inline-flex;align-items:center;gap:9px;
-  padding:11px 18px;border-radius:999px;cursor:pointer;
-  background:var(--card);border:1px solid var(--line);color:var(--ink);
-  font-size:13px;font-family:inherit;
-  box-shadow:0 10px 28px rgba(0,0,0,.16);
-  transition:transform .2s,border-color .2s;
-}
-.skin-toggle:hover{transform:translateY(-2px);border-color:var(--line-strong)}
-.skin-toggle .dot{
-  width:16px;height:16px;border-radius:50%;
-  background:linear-gradient(135deg,var(--paper) 0 50%,var(--brick) 50% 100%);
-  border:1px solid var(--line-strong);
-}
-.skin-panel{
-  position:absolute;left:0;bottom:calc(100% + 12px);width:266px;
-  background:var(--card);border:1px solid var(--line);border-radius:16px;
-  padding:16px;box-shadow:0 22px 54px rgba(0,0,0,.26);
-  opacity:0;transform:translateY(10px) scale(.98);transform-origin:bottom left;
-  pointer-events:none;transition:opacity .22s ease,transform .22s ease;
-}
-.skin.open .skin-panel{opacity:1;transform:none;pointer-events:auto}
-.skin-panel .title{font-size:13.5px;font-weight:700;color:var(--heading);letter-spacing:.5px}
-.skin-panel .tip{font-size:11.5px;color:var(--ink-faint);margin-top:4px;line-height:1.6;margin-bottom:12px}
-.skin-opt{
-  display:flex;align-items:center;gap:11px;width:100%;
-  padding:9px 10px;margin-top:6px;border-radius:10px;cursor:pointer;
-  background:transparent;border:1px solid transparent;
-  font-family:inherit;text-align:left;transition:background .2s,border-color .2s;
-}
-.skin-opt:hover{background:var(--paper-2);border-color:var(--line)}
-.skin-opt .sw{
-  width:30px;height:30px;border-radius:8px;flex:none;
-  border:1px solid rgba(0,0,0,.12);position:relative;overflow:hidden;
-}
-.skin-opt .sw::after{
-  content:"";position:absolute;left:0;right:0;bottom:0;height:42%;
-}
-.skin-opt .txt{flex:1;min-width:0}
-.skin-opt .nm{font-size:13px;font-weight:600;color:var(--ink);display:block}
-.skin-opt .ds{font-size:11px;color:var(--ink-faint);display:block;margin-top:2px}
-.skin-opt .ck{
-  width:16px;height:16px;border-radius:50%;flex:none;
-  border:1.5px solid var(--line-strong);font-size:10px;color:transparent;
-  display:flex;align-items:center;justify-content:center;
-}
-.skin-opt.active{border-color:var(--brick);background:var(--tag-bg)}
-.skin-opt.active .ck{background:var(--brick);border-color:var(--brick);color:var(--on-accent)}
-
-/* 换肤瞬间的全局过渡 */
-html.skin-anim *,
-html.skin-anim *::before,
-html.skin-anim *::after{
-  transition:background-color .38s ease,color .38s ease,border-color .38s ease,box-shadow .38s ease !important;
-}
-@media(max-width:560px){
-  .skin{left:14px;bottom:14px}
-  .skin-toggle{padding:9px 14px;font-size:12px}
-  .skin-panel{width:min(266px,calc(100vw - 28px))}
-}

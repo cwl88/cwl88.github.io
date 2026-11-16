@@ -17,6 +17,17 @@
 | `assets/style.css` | —— | 全站样式 |
 | `assets/site.js` | —— | 星空、滚动、年度进度条 |
 
+## 配色
+
+默认**暗黑风**（深黑背景 + 橙色点缀）。想换风格，给每个页面 `<html>` 标签加属性即可：
+
+```html
+<html lang="zh-CN" data-theme="minimal">   <!-- 极简白：暖灰背景 + 深砖红字 -->
+<html lang="zh-CN" data-theme="classic">   <!-- 古典青：青灰背景 + 朱砂红 -->
+```
+
+也可以用 `?theme=minimal` / `?theme=classic` 临时预览，不用改代码。
+
 ## 往里填内容
 
 每个栏目页里都有虚线「空位（.slot）」模板，把 `<div class="slot">…</div>`
