@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>眺望塔 · 万里长城</title>
+<meta name="description" content="眺望塔 —— 常用工具与资源导航。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="top">
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="logo">城</span><span>万里长城</span></a>
+    <div class="nav-links">
+      <a href="brick.html">万里砖</a>
+      <a href="beacon.html">烽火台</a>
+      <a href="tower.html" class="active">眺望塔</a>
+      <a href="notes.html">青砖录</a>
+      <a href="letter.html">飞鸽传书</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div id="stars"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">万里长城</a><i>/</i>眺望塔</div>
+    <div class="num">叁 · TOOLS</div>
+    <h1>眺望塔</h1>
+    <p class="desc">常用工具与资源导航。站得高一点、看得远一点，就能少走一些别人走过的弯路。</p>
+    <div class="meta">
+      <span>4 个分类位</span>
+      <span>工具 · 书单 · 站点 · 清单</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="slots">
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">分类一 · 工具</div>
+        <div class="hint">你每天都会打开的那几个，值得单独列出来</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">分类二 · 书单</div>
+        <div class="hint">读过的书，以及为什么推荐它</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">分类三 · 常读站点</div>
+        <div class="hint">不是导航站，是一份会反复回访的短名单</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">分类四 · 自用清单</div>
+        <div class="hint">清单、模板、提示词，随手可抄</div>
+      </div>
+    </div>
+
+    <div class="note">
+      这一页目前是<b>空骨架</b>：原有的资源数量与条目已清空。建议按「分类 → 条目」两层结构往里填，条目多时再拆成独立页面。
+    </div>
+
+    <details class="snippet">
+      <summary>如何往塔上放一组资源</summary>
+      <div class="snippet-body">
+        <p>条目较少时（不超过 4 组），直接把下面的结构放进 <code>tower.html</code> 的 <code>&lt;div class="slots"&gt;</code>：</p>
+        <pre><code>&lt;div class="tile"&gt;
+  &lt;div class="tile-num"&gt;01 · 工具&lt;/div&gt;
+  &lt;h3&gt;分类名称&lt;/h3&gt;
+  &lt;p&gt;这一组里放了什么、适合什么时候用。&lt;/p&gt;
+  &lt;span class="tile-tag"&gt;3 个条目&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+        <p>条目变多后，可以给每个分类单独建页（如 <code>tower-tools.html</code>），再在这里做入口。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="progress-wrap">
+      <div class="progress-label"><span id="yearLabel"></span><span id="yearPercent">0%</span></div>
+      <div class="progress-bar"><i id="yearProgress"></i></div>
+    </div>
+    <div class="foot-line">一砖一瓦，垒起我的数字长城。</div>
+    <div class="links">
+      <a href="https://github.com/cwl88" target="_blank" rel="noopener">GitHub</a>
+      <a href="letter.html">飞鸽传书</a>
+      <a href="#top">回到顶部</a>
+    </div>
+    <div class="copyright">© 2024 万李长城 · Powered by GitHub Pages</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+<script src="assets/site.js"></script>
+</body>
+</html>

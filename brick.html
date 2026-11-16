@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>万里砖 · 万里长城</title>
+<meta name="description" content="万里砖 —— 干货与作品。方法、模板、项目、成品。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="top">
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="logo">城</span><span>万里长城</span></a>
+    <div class="nav-links">
+      <a href="brick.html" class="active">万里砖</a>
+      <a href="beacon.html">烽火台</a>
+      <a href="tower.html">眺望塔</a>
+      <a href="notes.html">青砖录</a>
+      <a href="letter.html">飞鸽传书</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div id="stars"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">万里长城</a><i>/</i>万里砖</div>
+    <div class="num">壹 · WORKS</div>
+    <h1>万里砖</h1>
+    <p class="desc">干货与作品。方法、模板、项目、成品 —— 凡是实打实做出来、能直接拿去用的东西，都砌在这里。</p>
+    <div class="meta">
+      <span>共 0 块</span>
+      <span>持续添砖中</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="slots">
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第 1 块砖 · 待填充</div>
+        <div class="hint">放一个作品：标题、一句话说明它解决什么问题、链接</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第 2 块砖 · 待填充</div>
+        <div class="hint">可以是一个工具、一份模板、一份清单</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第 3 块砖 · 待填充</div>
+        <div class="hint">先留空也没关系，砖是慢慢烧出来的</div>
+      </div>
+    </div>
+
+    <div class="note">
+      这一页目前是<b>空骨架</b>：原作者的具体作品已全部清空，只留下版式与砖位。往后的每一块砖，都由你自己写进去。
+    </div>
+
+    <details class="snippet">
+      <summary>如何往这里添一块砖</summary>
+      <div class="snippet-body">
+        <p>把下面的结构复制到 <code>brick.html</code> 的 <code>&lt;div class="slots"&gt;</code> 里面，替换成你的文字，就会自动排成卡片：</p>
+        <pre><code>&lt;article class="tile"&gt;
+  &lt;div class="tile-num"&gt;01&lt;/div&gt;
+  &lt;h3&gt;作品标题&lt;/h3&gt;
+  &lt;p&gt;一句话说明它解决什么问题、你做了什么。&lt;/p&gt;
+  &lt;span class="tile-tag"&gt;干货&lt;/span&gt;
+&lt;/article&gt;</code></pre>
+        <p>想加链接，把 <code>&lt;article&gt;</code> 换成 <code>&lt;a class="tile" href="链接地址"&gt;</code> 即可。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="progress-wrap">
+      <div class="progress-label"><span id="yearLabel"></span><span id="yearPercent">0%</span></div>
+      <div class="progress-bar"><i id="yearProgress"></i></div>
+    </div>
+    <div class="foot-line">一砖一瓦，垒起我的数字长城。</div>
+    <div class="links">
+      <a href="https://github.com/cwl88" target="_blank" rel="noopener">GitHub</a>
+      <a href="letter.html">飞鸽传书</a>
+      <a href="#top">回到顶部</a>
+    </div>
+    <div class="copyright">© 2024 万李长城 · Powered by GitHub Pages</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>烽火台 · 万里长城</title>
+<meta name="description" content="烽火台 —— 深度长文与思考。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="top">
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="logo">城</span><span>万里长城</span></a>
+    <div class="nav-links">
+      <a href="brick.html">万里砖</a>
+      <a href="beacon.html" class="active">烽火台</a>
+      <a href="tower.html">眺望塔</a>
+      <a href="notes.html">青砖录</a>
+      <a href="letter.html">飞鸽传书</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div id="stars"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">万里长城</a><i>/</i>烽火台</div>
+    <div class="num">贰 · ESSAYS</div>
+    <h1>烽火台</h1>
+    <p class="desc">深度长文与思考。烽火点起，是告诉远处的人：这里有一件值得抬头看的事。</p>
+    <div class="meta">
+      <span>共 0 篇</span>
+      <span>长文与判断</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="slots">
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第 1 篇 · 待落笔</div>
+        <div class="hint">一个你反复想过、能讲透的问题</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第 2 篇 · 待落笔</div>
+        <div class="hint">一次完整的复盘：背景、判断、结果</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第 3 篇 · 待落笔</div>
+        <div class="hint">也可以先写成一句话，再慢慢点成火</div>
+      </div>
+    </div>
+
+    <div class="note">
+      这一页目前是<b>空骨架</b>：原有的长篇内容已清空。长文建议一篇一个独立页面（如 <b>beacon-01.html</b>），此处只放标题与摘要。
+    </div>
+
+    <details class="snippet">
+      <summary>如何往这里点一处烽火</summary>
+      <div class="snippet-body">
+        <p>复制下面的结构到 <code>beacon.html</code> 的 <code>&lt;div class="slots"&gt;</code> 里：</p>
+        <pre><code>&lt;a class="tile" href="beacon-01.html"&gt;
+  &lt;div class="tile-num"&gt;01 · 2024.01&lt;/div&gt;
+  &lt;h3&gt;文章标题&lt;/h3&gt;
+  &lt;p&gt;两三行摘要，让人知道点开能读到什么。&lt;/p&gt;
+  &lt;span class="tile-tag"&gt;长文 · 约 6000 字&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+        <p>摘要控制在 2–3 行最好看。篇幅较长时，正文另建页面，这里只做入口。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="progress-wrap">
+      <div class="progress-label"><span id="yearLabel"></span><span id="yearPercent">0%</span></div>
+      <div class="progress-bar"><i id="yearProgress"></i></div>
+    </div>
+    <div class="foot-line">一砖一瓦，垒起我的数字长城。</div>
+    <div class="links">
+      <a href="https://github.com/cwl88" target="_blank" rel="noopener">GitHub</a>
+      <a href="letter.html">飞鸽传书</a>
+      <a href="#top">回到顶部</a>
+    </div>
+    <div class="copyright">© 2024 万李长城 · Powered by GitHub Pages</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+<script src="assets/site.js"></script>
+</body>
+</html>

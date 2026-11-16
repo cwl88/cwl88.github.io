@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青砖录 · 万里长城</title>
+<meta name="description" content="青砖录 —— 随笔与日记。">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body id="top">
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="logo">城</span><span>万里长城</span></a>
+    <div class="nav-links">
+      <a href="brick.html">万里砖</a>
+      <a href="beacon.html">烽火台</a>
+      <a href="tower.html">眺望塔</a>
+      <a href="notes.html" class="active">青砖录</a>
+      <a href="letter.html">飞鸽传书</a>
+    </div>
+  </div>
+</nav>
+
+<header class="page-head">
+  <div id="stars"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">万里长城</a><i>/</i>青砖录</div>
+    <div class="num">肆 · NOTES</div>
+    <h1>青砖录</h1>
+    <p class="desc">随笔与日记。未经打磨的、半成的、只在深夜里成立的念头 —— 先记下来，再等它慢慢烧成青砖。</p>
+    <div class="meta">
+      <span>共 0 则</span>
+      <span>不必完整，记了就好</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="slots">
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">2024 · 第一则</div>
+        <div class="hint">今天想明白的一件事，三句话也可以</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第二则 · 待记</div>
+        <div class="hint">读到的一句、看到的一幕、突然的念头</div>
+      </div>
+      <div class="slot reveal">
+        <div class="plus">＋</div>
+        <div class="label">第三则 · 待记</div>
+        <div class="hint">这里是唯一允许不讲逻辑的地方</div>
+      </div>
+    </div>
+
+    <div class="note">
+      这一页目前是<b>空骨架</b>：原有的随笔已清空。日记类内容按时间倒序排，最新的放在最前面即可。
+    </div>
+
+    <details class="snippet">
+      <summary>如何记一则青砖</summary>
+      <div class="snippet-body">
+        <p>复制下面的结构到 <code>notes.html</code> 的 <code>&lt;div class="slots"&gt;</code> 里，新的放最前面：</p>
+        <pre><code>&lt;article class="tile"&gt;
+  &lt;div class="tile-num"&gt;2024.03.18&lt;/div&gt;
+  &lt;h3&gt;今天的标题，或者一句话&lt;/h3&gt;
+  &lt;p&gt;正文。可以是一段，也可以只有一行。&lt;/p&gt;
+  &lt;span class="tile-tag"&gt;随笔&lt;/span&gt;
+&lt;/article&gt;</code></pre>
+        <p>标签可自由改：随笔 / 日记 / 摘录 / 半成品。</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="progress-wrap">
+      <div class="progress-label"><span id="yearLabel"></span><span id="yearPercent">0%</span></div>
+      <div class="progress-bar"><i id="yearProgress"></i></div>
+    </div>
+    <div class="foot-line">一砖一瓦，垒起我的数字长城。</div>
+    <div class="links">
+      <a href="https://github.com/cwl88" target="_blank" rel="noopener">GitHub</a>
+      <a href="letter.html">飞鸽传书</a>
+      <a href="#top">回到顶部</a>
+    </div>
+    <div class="copyright">© 2024 万李长城 · Powered by GitHub Pages</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+<script src="assets/site.js"></script>
+</body>
+</html>
