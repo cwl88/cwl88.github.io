@@ -103,8 +103,9 @@
     var d = Math.floor(rest / 86400000);
     var h = Math.floor(rest % 86400000 / 3600000);
     var m = Math.floor(rest % 3600000 / 60000);
+    var sec = Math.floor(rest % 60000 / 1000);
     right.innerHTML = '距 <b>' + (y + 1) + '</b> 年还有 <b>' + d +
-      '</b> 天 <b>' + pad(h) + '</b> 小时 <b>' + pad(m) + '</b> 分';
+      '</b> 天 <b>' + pad(h) + '</b> 小时 <b>' + pad(m) + '</b> 分 <b>' + pad(sec) + '</b> 秒';
 
     /* 进度条 */
     if (fill) fill.style.width = Math.min(100, pct).toFixed(4) + '%';
