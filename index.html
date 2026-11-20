@@ -115,10 +115,6 @@
 
 <footer>
   <div class="wrap">
-    <div class="progress-wrap">
-      <div class="progress-label"><span id="yearLabel"></span><span id="yearPercent">0%</span></div>
-      <div class="progress-bar"><i id="yearProgress"></i></div>
-    </div>
     <div class="foot-line">一砖一瓦，垒起我的数字长城。</div>
     <div class="links">
       <a href="https://github.com/cwl88" target="_blank" rel="noopener">GitHub</a>
@@ -127,6 +123,25 @@
     </div>
     <div class="copyright">© 2026 万里长城 · Powered by GitHub Pages</div>
   </div>
+<!-- 年度时间进度 -->
+<section class="ytime-sec" id="ytime">
+  <div class="wrap">
+    <div class="ytime">
+      <div class="ytime-top">
+        <span class="ytime-label">时间正在流逝<i>_</i></span>
+        <span class="ytime-pct" id="ypPct">--.-----%</span>
+      </div>
+      <div class="ytime-bar" role="progressbar" aria-label="今年时间进度">
+        <i id="ypFill"></i>
+      </div>
+      <div class="ytime-bottom">
+        <span id="ypLeft"> calculating…</span>
+        <span id="ypRight"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
 </footer>
 
 <button id="toTop" aria-label="回到顶部">↑</button>
