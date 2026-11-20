@@ -469,3 +469,34 @@ footer .links a:hover{color:#fff}
   .ytime-sec{padding:26px 0 60px}
   .ytime-bottom{flex-direction:column;gap:6px}
 }
+
+/* ===================== 文章列表卡片（烽火台） ===================== */
+.postlist{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;
+}
+.post{
+  display:flex;align-items:center;gap:14px;
+  padding:17px 22px;border-top:1px solid var(--line);
+  transition:background .2s;
+}
+.post:first-child{border-top:none}
+.post:hover{background:var(--paper-2)}
+.post-num{
+  flex:none;min-width:26px;text-align:left;
+  font-family:var(--serif);font-size:13px;font-weight:700;
+  color:var(--brick);letter-spacing:.05em;
+}
+.post-title{
+  flex:1;min-width:0;font-size:14.5px;line-height:1.65;color:var(--ink);
+}
+.post-link{
+  flex:none;font-size:12.5px;color:var(--ink-faint);letter-spacing:.06em;
+  transition:color .2s;white-space:nowrap;
+}
+.post:hover .post-link{color:var(--brick)}
+.post-link:hover{color:var(--brick)}
+@media(max-width:560px){
+  .post{padding:14px 16px;gap:10px}
+  .post-title{font-size:13.5px}
+}

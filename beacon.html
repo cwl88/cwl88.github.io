@@ -31,46 +31,37 @@
     <h1>烽火台</h1>
     <p class="desc">深度长文与思考。烽火点起，是告诉远处的人：这里有一件值得抬头看的事。</p>
     <div class="meta">
-      <span>共 0 篇</span>
-      <span>长文与判断</span>
+      <span>共 1 篇</span>
+      <span>长文与判断 · 每篇可跳原文</span>
     </div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <div class="slots">
-      <div class="slot reveal">
-        <div class="plus">＋</div>
-        <div class="label">第 1 篇 · 待落笔</div>
-        <div class="hint">一个你反复想过、能讲透的问题</div>
-      </div>
-      <div class="slot reveal">
-        <div class="plus">＋</div>
-        <div class="label">第 2 篇 · 待落笔</div>
-        <div class="hint">一次完整的复盘：背景、判断、结果</div>
-      </div>
-      <div class="slot reveal">
-        <div class="plus">＋</div>
-        <div class="label">第 3 篇 · 待落笔</div>
-        <div class="hint">也可以先写成一句话，再慢慢点成火</div>
+    <div class="postlist">
+      <div class="post">
+        <span class="post-num">01</span>
+        <span class="post-title">吸引力 = 真实价值 × 可见证据 × 靠近的便利</span>
+        <a class="post-link" href="https://mp.weixin.qq.com/s/oPEBzBv0W9xTPupUCdCg-g"
+           target="_blank" rel="noopener noreferrer">微信阅读 ↗</a>
       </div>
     </div>
 
     <div class="note">
-      这一页目前是<b>空骨架</b>：原有的长篇内容已清空。长文建议一篇一个独立页面（如 <b>beacon-01.html</b>），此处只放标题与摘要。
+      烽火台的第一把火已经点上。想再添一篇：复制下面示例里的 <b>&lt;div class="post"&gt;</b> 结构，接在列表末尾，改编号、标题和链接即可。
     </div>
 
     <details class="snippet">
       <summary>如何往这里点一处烽火</summary>
       <div class="snippet-body">
         <p>复制下面的结构到 <code>beacon.html</code> 的 <code>&lt;div class="slots"&gt;</code> 里：</p>
-        <pre><code>&lt;a class="tile" href="beacon-01.html"&gt;
-  &lt;div class="tile-num"&gt;01 · 2024.01&lt;/div&gt;
-  &lt;h3&gt;文章标题&lt;/h3&gt;
-  &lt;p&gt;两三行摘要，让人知道点开能读到什么。&lt;/p&gt;
-  &lt;span class="tile-tag"&gt;长文 · 约 6000 字&lt;/span&gt;
-&lt;/a&gt;</code></pre>
+        <pre><code>&lt;div class="post"&gt;
+  &lt;span class="post-num"&gt;02&lt;/span&gt;
+  &lt;span class="post-title"&gt;文章标题&lt;/span&gt;
+  &lt;a class="post-link" href="文章链接"
+     target="_blank" rel="noopener noreferrer"&gt;微信阅读 ↗&lt;/a&gt;
+&lt;/div&gt;</code></pre>
         <p>摘要控制在 2–3 行最好看。篇幅较长时，正文另建页面，这里只做入口。</p>
       </div>
     </details>
